@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "start_date": "2011-12-30",
+  "end_date": "2012-01-01",
+  "jobs": [
+    {"id": "date-jump", "zone": "Pacific/Apia", "times": ["00:00"], "weekdays": [0, 1, 2, 3, 4, 5, 6], "gap": "next_valid", "fold": "both"}
+  ]
+}

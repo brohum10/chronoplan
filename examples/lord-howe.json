@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "start_date": "2026-04-05",
+  "end_date": "2026-04-06",
+  "jobs": [
+    {"id": "half-hour-fold", "zone": "Australia/Lord_Howe", "times": ["01:45"], "weekdays": [6], "gap": "skip", "fold": "both"}
+  ]
+}

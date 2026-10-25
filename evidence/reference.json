@@ -1,0 +1,255 @@
+{
+  "europe-fold": {
+    "range": {
+      "basis": "each job's local dates",
+      "end_date_exclusive": "2026-10-27",
+      "start_date": "2026-10-24"
+    },
+    "runs": [
+      {
+        "id": "940e8b0cc56c789f8e50dc2bb7f4eab78c862a8a023f78abcf154427b23f5783",
+        "job": "london-report",
+        "local": "2026-10-24T01:30+01:00",
+        "origins": [
+          {
+            "fold": 0,
+            "nominal_wall": "2026-10-24T01:30",
+            "resolution": "normal",
+            "resolved_wall": "2026-10-24T01:30",
+            "shift_minutes": 0
+          }
+        ],
+        "utc": "2026-10-24T00:30:00Z",
+        "zone": "Europe/London"
+      },
+      {
+        "id": "ece576376510de39b5ecf6abddbbc6ecf348910c7e16fa16d8c1b8ca33f99f5c",
+        "job": "london-report",
+        "local": "2026-10-25T01:30+01:00",
+        "origins": [
+          {
+            "fold": 0,
+            "nominal_wall": "2026-10-25T01:30",
+            "resolution": "fold",
+            "resolved_wall": "2026-10-25T01:30",
+            "shift_minutes": 0
+          }
+        ],
+        "utc": "2026-10-25T00:30:00Z",
+        "zone": "Europe/London"
+      },
+      {
+        "id": "00eea1d8488a2454accfbc140e0dacf638098fb74a38d08435acd13225ab6556",
+        "job": "london-report",
+        "local": "2026-10-25T01:30+00:00",
+        "origins": [
+          {
+            "fold": 1,
+            "nominal_wall": "2026-10-25T01:30",
+            "resolution": "fold",
+            "resolved_wall": "2026-10-25T01:30",
+            "shift_minutes": 0
+          }
+        ],
+        "utc": "2026-10-25T01:30:00Z",
+        "zone": "Europe/London"
+      },
+      {
+        "id": "0695cef3d04d5d77a55dcd0a20cc86b8d822549b5664f542f64aad36780c77b1",
+        "job": "london-report",
+        "local": "2026-10-26T01:30+00:00",
+        "origins": [
+          {
+            "fold": 0,
+            "nominal_wall": "2026-10-26T01:30",
+            "resolution": "normal",
+            "resolved_wall": "2026-10-26T01:30",
+            "shift_minutes": 0
+          }
+        ],
+        "utc": "2026-10-26T01:30:00Z",
+        "zone": "Europe/London"
+      }
+    ],
+    "schedule_sha256": "273d2a12ddf84838ae899b013dd8ce99631c2a00227a381212a3e01987a18872",
+    "skipped": [],
+    "stats": {
+      "ambiguous_nominals": 1,
+      "coalesced_occurrences": 0,
+      "nominal_occurrences": 3,
+      "shifted_nominals": 0,
+      "skipped_nominals": 0,
+      "unique_runs": 4,
+      "unique_wall_time_probes": 3
+    },
+    "timezone_data": {
+      "iana": "2026e",
+      "package": "2026.5",
+      "source": "packaged tzdata"
+    },
+    "version": 1
+  },
+  "lord-howe": {
+    "range": {
+      "basis": "each job's local dates",
+      "end_date_exclusive": "2026-04-06",
+      "start_date": "2026-04-05"
+    },
+    "runs": [
+      {
+        "id": "e242a57a15af34736526d220ff69bd8258e06ea05c2f2444f97fcff2a6df2cf1",
+        "job": "half-hour-fold",
+        "local": "2026-04-05T01:45+11:00",
+        "origins": [
+          {
+            "fold": 0,
+            "nominal_wall": "2026-04-05T01:45",
+            "resolution": "fold",
+            "resolved_wall": "2026-04-05T01:45",
+            "shift_minutes": 0
+          }
+        ],
+        "utc": "2026-04-04T14:45:00Z",
+        "zone": "Australia/Lord_Howe"
+      },
+      {
+        "id": "3444744b06c3fdb061a9be0bc6b07822a52f5c7cc3f4342f00469b03c3c82e96",
+        "job": "half-hour-fold",
+        "local": "2026-04-05T01:45+10:30",
+        "origins": [
+          {
+            "fold": 1,
+            "nominal_wall": "2026-04-05T01:45",
+            "resolution": "fold",
+            "resolved_wall": "2026-04-05T01:45",
+            "shift_minutes": 0
+          }
+        ],
+        "utc": "2026-04-04T15:15:00Z",
+        "zone": "Australia/Lord_Howe"
+      }
+    ],
+    "schedule_sha256": "782f0c82e86d8834520aaea1f9c8b026b05cfc73ce07441efeb4926fe0e3ac97",
+    "skipped": [],
+    "stats": {
+      "ambiguous_nominals": 1,
+      "coalesced_occurrences": 0,
+      "nominal_occurrences": 1,
+      "shifted_nominals": 0,
+      "skipped_nominals": 0,
+      "unique_runs": 2,
+      "unique_wall_time_probes": 1
+    },
+    "timezone_data": {
+      "iana": "2026e",
+      "package": "2026.5",
+      "source": "packaged tzdata"
+    },
+    "version": 1
+  },
+  "samoa-skipped-date": {
+    "range": {
+      "basis": "each job's local dates",
+      "end_date_exclusive": "2012-01-01",
+      "start_date": "2011-12-30"
+    },
+    "runs": [
+      {
+        "id": "3adff8664d828db16bbbf41774936502876e8e0d1cd151cb7e063963de83a512",
+        "job": "date-jump",
+        "local": "2011-12-31T00:00+14:00",
+        "origins": [
+          {
+            "fold": 0,
+            "nominal_wall": "2011-12-30T00:00",
+            "resolution": "gap_next_valid",
+            "resolved_wall": "2011-12-31T00:00",
+            "shift_minutes": 1440
+          },
+          {
+            "fold": 0,
+            "nominal_wall": "2011-12-31T00:00",
+            "resolution": "normal",
+            "resolved_wall": "2011-12-31T00:00",
+            "shift_minutes": 0
+          }
+        ],
+        "utc": "2011-12-30T10:00:00Z",
+        "zone": "Pacific/Apia"
+      }
+    ],
+    "schedule_sha256": "bfdf7d6e621d868ebeeca2861b5746ba25367943d4c1d38e423ac87ec22323df",
+    "skipped": [],
+    "stats": {
+      "ambiguous_nominals": 0,
+      "coalesced_occurrences": 1,
+      "nominal_occurrences": 2,
+      "shifted_nominals": 1,
+      "skipped_nominals": 0,
+      "unique_runs": 1,
+      "unique_wall_time_probes": 1441
+    },
+    "timezone_data": {
+      "iana": "2026e",
+      "package": "2026.5",
+      "source": "packaged tzdata"
+    },
+    "version": 1
+  },
+  "us-gap-collision": {
+    "range": {
+      "basis": "each job's local dates",
+      "end_date_exclusive": "2026-03-09",
+      "start_date": "2026-03-08"
+    },
+    "runs": [
+      {
+        "id": "d62f565a0f101c1b5bb4386b2c2afc2c38d02be9ed09c63895236d2de4d16cc9",
+        "job": "shift-and-merge",
+        "local": "2026-03-08T03:00-04:00",
+        "origins": [
+          {
+            "fold": 0,
+            "nominal_wall": "2026-03-08T02:30",
+            "resolution": "gap_next_valid",
+            "resolved_wall": "2026-03-08T03:00",
+            "shift_minutes": 30
+          },
+          {
+            "fold": 0,
+            "nominal_wall": "2026-03-08T03:00",
+            "resolution": "normal",
+            "resolved_wall": "2026-03-08T03:00",
+            "shift_minutes": 0
+          }
+        ],
+        "utc": "2026-03-08T07:00:00Z",
+        "zone": "America/New_York"
+      }
+    ],
+    "schedule_sha256": "a69536844b2bda4c2fde2c7f1fc536fbbc7134415439902aff23954665f7ffcf",
+    "skipped": [
+      {
+        "job": "skip-missing",
+        "nominal_wall": "2026-03-08T02:30",
+        "reason": "nonexistent_local_time",
+        "zone": "America/New_York"
+      }
+    ],
+    "stats": {
+      "ambiguous_nominals": 0,
+      "coalesced_occurrences": 1,
+      "nominal_occurrences": 3,
+      "shifted_nominals": 1,
+      "skipped_nominals": 1,
+      "unique_runs": 1,
+      "unique_wall_time_probes": 31
+    },
+    "timezone_data": {
+      "iana": "2026e",
+      "package": "2026.5",
+      "source": "packaged tzdata"
+    },
+    "version": 1
+  }
+}

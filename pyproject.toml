@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chronoplan"
+version = "0.1.0"
+description = "Offline recurrence previews with explicit daylight-saving policies, UTC identities, and pinned time-zone data"
+requires-python = ">=3.12"
+readme = "README.md"
+license = "MIT"
+authors = [{name = "Soham Jindal"}]
+dependencies = ["tzdata==2026.5"]
+
+[project.urls]
+Repository = "https://github.com/brohum10/chronoplan"
+Issues = "https://github.com/brohum10/chronoplan/issues"
+
+[project.scripts]
+chronoplan = "chronoplan.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["chronoplan*"]
+
+[tool.black]
+line-length = 100

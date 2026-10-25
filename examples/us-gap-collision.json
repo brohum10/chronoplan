@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "start_date": "2026-03-08",
+  "end_date": "2026-03-09",
+  "jobs": [
+    {"id": "shift-and-merge", "zone": "America/New_York", "times": ["02:30", "03:00"], "weekdays": [6], "gap": "next_valid", "fold": "first"},
+    {"id": "skip-missing", "zone": "America/New_York", "times": ["02:30"], "weekdays": [6], "gap": "skip", "fold": "first"}
+  ]
+}
