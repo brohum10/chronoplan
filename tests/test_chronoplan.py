@@ -214,7 +214,17 @@ class ResolutionTests(unittest.TestCase):
         self.assertEqual(report["runs"][0]["origins"][0]["shift_minutes"], 1440)
 
     def test_unknown_and_unsafe_zone_keys(self):
-        for key in ("Not/AZone", "../UTC", "/etc/passwd", "America\\New_York", "Etc", "x" * 101):
+        for key in (
+            "Not/AZone",
+            "../UTC",
+            "/etc/passwd",
+            "America\\New_York",
+            "Etc",
+            "x" * 101,
+            "europe/london",
+            "america/New_York",
+            "utc",
+        ):
             with self.subTest(key=key), self.assertRaises(ValueError):
                 load_zone(key)
 

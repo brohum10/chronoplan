@@ -11,10 +11,20 @@ import tzdata
 from .data import Schedule, ZONE, canonical, parse_date
 
 
+@lru_cache(maxsize=1)
+def zone_keys():
+    return frozenset(
+        resources.files("tzdata").joinpath("zones").read_text(encoding="utf-8").splitlines()
+    )
+
+
 @lru_cache(maxsize=64)
 def load_zone(key):
     if type(key) is not str or len(key) > 100 or not ZONE.fullmatch(key):
         raise ValueError("invalid time zone key")
+    # Validate against the package catalog, not the host filesystem's case rules.
+    if key not in zone_keys():
+        raise ValueError(f"unknown or unsupported IANA zone: {key}")
     # Load the packaged database explicitly, not the host's possibly different TZPATH.
     try:
         resource = resources.files("tzdata.zoneinfo").joinpath(*key.split("/"))

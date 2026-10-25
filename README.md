@@ -91,6 +91,8 @@ files, but shell redirection can overwrite an existing file.
 - `fold`: `first`, `second`, or `both`, meaning earlier/later UTC instant for an
   ambiguous label. Ordinary times still emit one run regardless of fold policy.
 - Policies are required; the tool never silently guesses your intended behavior.
+- Zone keys are case-sensitive members of the packaged IANA catalog, even on
+  case-insensitive filesystems. Use `Europe/London`, not `europe/london`.
 - If multiple labels for **the same job** resolve to the same UTC instant, they
   are coalesced into one run with all original labels retained. Different jobs
   at the same instant are never merged. Review this coalescing policy before
